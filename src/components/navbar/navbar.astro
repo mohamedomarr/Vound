@@ -25,51 +25,12 @@ const menuitems = [
     />
          
         </a>
-        <div class="block lg:hidden">
-          <MenuIcon class="w-4 h-4 text-gray-800" />
-        </div>
       </div>
-      <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
-        <ul class="flex flex-col lg:flex-row lg:gap-3">
-          {
-            menuitems.map((item, index) => (
-              <>
-                {item.children && (
-                  <Dropdown
-                    title={item.title}
-                    children={item.children}
-                    lastItem={index === menuitems.length - 1}
-                  />
-                )}
-
-                {!item.children && (
-                  <li>
-                    <a
-                      href={item.path}
-                      class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900">
-                      <span> {item.title}</span>
-                      {item.badge && (
-                        <span class="ml-1 px-2 py-0.5 text-[10px] animate-pulse font-semibold uppercase text-white bg-indigo-600 rounded-full">
-                          New
-                        </span>
-                      )}
-                    </a>
-                  </li>
-                )}
-              </>
-            ))
-          }
-        </ul>
-        <div class="lg:hidden flex items-center mt-3 gap-4">
-          <Link href="/" style="muted" block size="md">home .</Link>
-          <Link href="/contact" size="md" block>join the waitlist</Link>
-        </div>
-      </MenuItems>
     </Astronav>
     <div>
       <div class="flex justify-center items-center gap-4">
-        <a href="/" class="font-ibmPlexMono text-white">home</a>
-        <a href="/contact" class="font-ibmPlexMono text-white">join the waitlist</a>    
+        <a href="/" class="font-ibmPlexMono font-mediumItalic italic  text-white">home</a>
+        <a href="/contact" class="font-ibmPlexMono font-mediumItalic italic  text-white">join the waitlist</a>    
       </div>
     </div>
   </header>

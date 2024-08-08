@@ -6,7 +6,7 @@ import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon/components";
 ---
 
-<main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+<main class="grid lg:grid-cols-2 place-items-center pt-20 pb-12 md:pt-16 md:pb-28">
   <div class="py-6 md:order-1 hidden md:block">
     <Picture
       src={heroImage}
@@ -17,26 +17,27 @@ import { Icon } from "astro-icon/components";
       format="avif"
     />
   </div>
-  <div>
+  
+  <div>    
       
-      
-<h1 class="text-white text-6xl lg:tracking-tight xl:tracking-tighter leading-tight font-angus" style="text-width:400; font-family: 'Angus', monospace;">
-  Spatial computing lab building AI-powered assistive listening software for the deaf.
-</h1>
+    <h1 class="text-white text-6xl lg:tracking-tight xl:tracking-tighter leading-tight font-angus" style="text-width:400; font-family: 'Angus', monospace;">
+      Spatial computing lab building AI-powered assistive listening software for the deaf.
+    </h1>
 
     <p class="text-lg mt-4 text-slate-600 max-w-xl font-ibmPlexMono" style="color: #ccd0d3">
       We’re building AI-powered assistive listening software that converts spoken words and ambient sound to visuals to enable the perception of sound to the deaf and hard of hearing.
     </p>
-    <div class="mt-8 flex flex-col sm:flex-row gap-3 font-ibmPlexMono">
+
+    <div class="mt-8 flex flex-col sm:flex-row gap-3 font-ibmPlexMono font-mediumItalic italic ">
       <Link
         href="/contact"
         
-
         class="flex gap-1 items-center justify-center"
         rel="noopener"
       >
-      Join the waitlist ->
-      </link>
-      </div>
-      </div>
-      </main>
+        Join the waitlist →
+      </Link>
+    </div>
+
+  </div>
+</main>

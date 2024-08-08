@@ -11,6 +11,12 @@ module.exports = {
           "Inter",
           ...defaultTheme.fontFamily.sans,
         ],
+        angus: ['"Angus"', 'sans-serif'],
+        ibmPlexMono: ['"IBM Plex Mono"', 'monospace'],
+      },
+      fontWeight: {
+        light: 400,
+        mediumItalic: 400,
       },
     },
   },
